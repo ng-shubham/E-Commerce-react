@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+.CarouselCaption-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 92vh;
+  width: 100%;
+  top: 0;
+}
+
+.carousel-img {
+  height: 92vh;
+  object-fit: cover;
+}
+
+.cart-badge {
+  position: absolute;
+  margin: -5px 0 0 -5px;
+}
