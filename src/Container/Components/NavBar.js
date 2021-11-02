@@ -2,25 +2,28 @@ import React from "react";
 import { Container, Navbar, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HiShoppingCart } from "react-icons/hi";
+import { connect } from "react-redux";
 
-function NavBar() {
+function NavBar({ quantity }) {
+  console.log(quantity);
   return (
     <>
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="light"
-        variant="light"
+        bg="dark"
+        variant="dark"
+        fixed="top"
         className="py-3"
       >
         <Container>
-          <Link to="/">
-            <Navbar.Brand>Shopping store</Navbar.Brand>
+          <Link to="/" className="site_name">
+            <Navbar.Brand>Shopping Time</Navbar.Brand>
           </Link>
-          <Link to="/cart">
+          <Link to="/cart" className="theme-color">
             <HiShoppingCart className="font30" />
-            <Badge pill bg="dark" className="cart-badge">
-              10
+            <Badge pill bg="secondary" className="cart-badge">
+              {quantity}
             </Badge>
           </Link>
         </Container>
@@ -29,4 +32,10 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+  return {
+    quantity: state.totalQuantities,
+  };
+};
+
+export default connect(mapStateToProps)(NavBar);
