@@ -5,7 +5,6 @@ import { HiShoppingCart } from "react-icons/hi";
 import { connect } from "react-redux";
 
 function NavBar({ quantity }) {
-  console.log(quantity);
   return (
     <>
       <Navbar
@@ -14,7 +13,7 @@ function NavBar({ quantity }) {
         bg="dark"
         variant="dark"
         fixed="top"
-        className="py-3"
+        className="p-3"
       >
         <Container>
           <Link to="/" className="site_name">

@@ -36,8 +36,8 @@ function ProductDetails() {
   return (
     <div>
       <Container className="mt-5 d-flex justify-content-center">
-        <Card className="my-5 w-75">
-          <div className="d-flex">
+        <Card className="my-5  main-card">
+          <div className="d-flex card-detail-product">
             <Card.Img variant="top" src={image} className="prodDetails_image" />
             <Card.Body>
               <Card.Title>{title}</Card.Title>
@@ -46,19 +46,22 @@ function ProductDetails() {
               <Card.Text>{price}</Card.Text>
 
               <ButtonGroup size="sm" className="mb-3">
-                <Button onClick={() => decQuantity()}>
+                <Button variant="dark" onClick={() => decQuantity()}>
                   <HiMinus />
                 </Button>
-                <Button disabled className="px-3">
+                <Button variant="dark" disabled className="px-3">
                   {quantity}
                 </Button>
-                <Button onClick={() => setQuantity(quantity + 1)}>
+                <Button
+                  variant="dark"
+                  onClick={() => setQuantity(quantity + 1)}
+                >
                   <HiPlus />
                 </Button>
               </ButtonGroup>
               <br />
               <Button
-                variant="primary"
+                variant="outline-dark"
                 onClick={() => dispatch(addProducts(allProductInfo))}
               >
                 Add to Cart

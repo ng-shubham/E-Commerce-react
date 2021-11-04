@@ -32,6 +32,13 @@ function Home() {
     <>
       <Banner />
       <Container className="my-5">
+        <div className="text-center">
+          <h2>Latest products</h2>
+          <p className="lead">
+            This is a lead paragraph. It stands out from regular paragraphs.
+          </p>
+        </div>
+        <hr />
         <Row>
           {loading ? (
             <div className="d-flex justify-content-center align-items-center">

@@ -16,8 +16,8 @@ function Banner() {
           />
           <div className="CarouselCaption-container">
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Everyday Styles </h3>
+              <p>80% Off</p>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
@@ -30,8 +30,8 @@ function Banner() {
 
           <div className="CarouselCaption-container">
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Casule Wear</h3>
+              <p>40-70% Off</p>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
@@ -44,8 +44,8 @@ function Banner() {
 
           <div className="CarouselCaption-container">
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>HERE {"&"} NOW</h3>
+              <p>Min. 40% Off</p>
             </Carousel.Caption>
           </div>
         </Carousel.Item>

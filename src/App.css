@@ -26,13 +26,13 @@ body {
 .CarouselCaption-container {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   top: 0;
 }
 
 .carousel-img {
-  height: 100vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -66,4 +66,66 @@ body {
   padding: 30px;
   border-right: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0px;
+}
+
+.cart-img {
+  width: 45px;
+  height: auto;
+  display: flex;
+  margin: 0 auto 0;
+}
+
+.cart-row {
+  height: 85px;
+}
+
+.cart-row td:nth-child(2) {
+  width: 175px;
+  text-align: left;
+}
+
+.cart-row td {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cart-table tr th {
+  text-align: center;
+}
+.cart-table tr th:nth-child(1),
+.cart-table tr th:nth-child(2) {
+  text-align: left;
+}
+
+.main-card {
+  width: 75%;
+}
+
+@media (max-width: 992px) {
+  .card-detail-product {
+    flex-flow: column;
+  }
+  .prodDetails_image {
+    max-width: 330px;
+    height: 375px;
+    border-right: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding-right: 20px !important;
+    padding-left: 5px;
+  }
+  .main-card {
+    width: 98%;
+  }
+  .cart-table tr th {
+    min-width: 100px;
+  }
+  .prodDetails_image {
+    max-height: 350px;
+  }
 }
